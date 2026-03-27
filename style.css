@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 5%;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn {
+    height: 42px;
+    background-color: #BE580F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./assets/Fundo.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.caixa-busca {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap: 10px;
+}
+
+.input-busca {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 400px;
+}
+
+.novidades {
+    background-color: #f5f5f5;
+    padding: 60px 8%;
+}
+
+.topo-novidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.ver-tudo {
+    color: #BE580F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.lista-livros {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+.livro {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+}
+
+.livro:hover .nome-livro {
+    text-decoration: underline;
+    text-decoration-color: #BE580F;
+}
+
+.capa-livro {
+    width: 100%;
+    height: 260px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+.capa-livro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nome-livro {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.autor-livro {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.btn-emprestar {
+    width: 100%;
+    padding: 10px;
+    background-color: #fdf2e9;
+    color: #c05c1d;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.eventos {
+    background: #e9e2db;
+    padding: 60px 80px;
+}
+
+.topo-eventos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    color: #c76a1c;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.btn-calendario {
+    background: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lista-eventos {
+    display: flex;
+    gap: 25px;
+}
+
+.card-evento {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.data-evento {
+    background: #f5eee8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dia {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c76a1c;
+}
+
+.mes {
+    font-size: 12px;
+}
+
+.info-evento p {
+    font-size: 14px;
+    color: #555;
+}
+
+.info-evento a {
+    color: #c76a1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.ajuda {
+    padding: 80px;
+    text-align: center;
+}
+
+.topo-ajuda h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.topo-ajuda p {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.lista-ajuda {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card-ajuda {
+    max-width: 260px;
+}
+
+.icone-ajuda {
+    background: #c76a1c;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.icone-ajuda img {
+    width: 25px;
+}
+
+
+.rodape {
+    width: 100%;
+    background: linear-gradient(to right, #2a1608, #3b1f0e);
+    color: #cbd5e1;
+    font-family: Arial, sans-serif;
+}
+
+.container-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.coluna-rodape {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+}
+
+.logo-img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.coluna-rodape h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.coluna-rodape p,
+.coluna-rodape span {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.redes {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.redes img {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #1e293b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 18px;
+    height: 18px;
+}
+.rodape-final {
+    border-top: 1px solid #334155;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #94a3b8;
+}
